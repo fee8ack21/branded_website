@@ -1,0 +1,21 @@
+.banner {
+    background: linear-gradient(rgba(37, 37, 37, 0.6), rgba(37, 37, 37, 0.6)) 0% 0% / cover no-repeat fixed,
+        url("/images/test/2.jpg");
+    background-attachment: fixed;
+    padding: 80px 0px;
+
+    &__title {
+        color: $tertiary-color;
+        font-size: 40px;
+        font-weight: $weight-bold;
+        letter-spacing: 5px;
+    }
+
+    &__sub-title {
+        margin-bottom: 0px;
+        color: $tertiary-color;
+        font-size: 24px;
+        font-weight: $weight-bold;
+        letter-spacing: 5px;
+    }
+}

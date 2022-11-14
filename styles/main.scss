@@ -1,0 +1,41 @@
+@import "./vendors/bootstrap-reboot";
+@import "./vendors/bootstrap-grid";
+
+@import "./base/typography";
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./utils/animation";
+
+@import "./components/carousel";
+@import "./components/go-to-btn";
+@import "./components/banner";
+@import "./components/form";
+@import "./components/button";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+body {
+    overflow-x: hidden;
+}
+
+.main-main {
+    position: relative;
+    min-height: 100px;
+    padding-top: 56px;
+
+    @include media-lg {
+        padding-top: 75px;
+    }
+}
+
+//格線系統樣式
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

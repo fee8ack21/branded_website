@@ -1,0 +1,31 @@
+@mixin fade-in-on-scroll {
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.5s;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.fade-in-on-scroll {
+    @include fade-in-on-scroll;
+}
+
+.left-fade-in-on-scroll {
+    @include fade-in-on-scroll;
+    transform: translateX(-60px);
+
+    &.active {
+        transform: translateX(0px);
+    }
+}
+
+.right-fade-in-on-scroll {
+    @include fade-in-on-scroll;
+    transform: translateX(60px);
+
+    &.active {
+        transform: translateX(0px);
+    }
+}
